@@ -8,63 +8,54 @@ namespace Assignment_1._3
 {
     internal class Program
     {
-      // EXERCISE 1 FUNCTIONS/METHODS:
+     // EXERCISE 1 FUNCTIONS/METHODS:
 
 
         // Calculate the area of a triangle
         static void triangleArea()
         {
-            Console.WriteLine();
-            Console.WriteLine("Enter the triangle base length as a number: ");
+            Console.WriteLine("\nEnter the triangle base length as a number: ");
             double triangleBase = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine();
-            Console.WriteLine("Enter the triangle height as a number: ");
+            Console.WriteLine("\nEnter the triangle height as a number: \n");
             double triangleHeight = Convert.ToDouble(Console.ReadLine());
 
 
             //Triangle Area
             double triangleArea = 0.5 * triangleBase * triangleHeight;
 
-            Console.WriteLine();
-            Console.WriteLine("The area of the triangle is: " + triangleArea);
-
+            Console.WriteLine("\nThe area of the triangle is: " + triangleArea);
         }
 
         // Calculate the area of a square
         static void squareArea()
         {
-            Console.WriteLine();
-            Console.WriteLine("Enter the length of one side of the square as a number: ");
+            Console.WriteLine("\nEnter the length of one side of the square as a number: \n");
             double squareLength = Convert.ToDouble(Console.ReadLine());
 
             // Square Area
             double squareArea = squareLength * squareLength;
 
-            Console.WriteLine();
-            Console.WriteLine("The area of the square is: " + squareArea);
+            Console.WriteLine("\nThe area of the square is: " + squareArea);
         }
 
         // Calculate the area of a rectangle
         static void rectangleArea()
         {
-            Console.WriteLine();
-            Console.WriteLine("Enter the length of the rectangle as a number: ");
+            Console.WriteLine("\nEnter the length of the rectangle as a number: ");
             double rectangleLength = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine();
-            Console.WriteLine("Enter the width of the rectangle as a number: ");
+            Console.WriteLine("\nEnter the width of the rectangle as a number: ");
             double rectangleWidth = Convert.ToDouble(Console.ReadLine());
 
             // Square Area
             double rectangleArea = rectangleLength * rectangleWidth;
 
-            Console.WriteLine();
-            Console.WriteLine("The area of the rectangle is: " + rectangleArea);
+            Console.WriteLine("\nThe area of the rectangle is: " + rectangleArea);
         }
 
 
-       // EXERCISE 3 FUNCTIONS/METHODS:
+     // EXERCISE 3 FUNCTIONS/METHODS:
 
 
         // To loop through any passed int array
@@ -99,19 +90,19 @@ namespace Assignment_1._3
         }
 
 
-      // MAIN CODE/METHOD
+     // MAIN CODE/METHOD
 
 
         static void Main(string[] args)
         {
-          // EXERCISE 1:
+         // EXERCISE 1:
 
             triangleArea();
             squareArea();
             rectangleArea();
 
 
-          // EXERCISE 2:
+         // EXERCISE 2:
 
 
             // Methods of declaring and initializing arrays
@@ -133,7 +124,7 @@ namespace Assignment_1._3
             char[] charArray = { 'a', 'b', 'c', 'd' };
 
 
-          // EXERCISE 3:
+         // EXERCISE 3:
 
 
             // I will first print the array in reverse without using array methods
@@ -143,7 +134,7 @@ namespace Assignment_1._3
             int[] userInputArray = new int[Convert.ToUInt32(Console.ReadLine())];
 
             Console.WriteLine("\nYou input a length of: " + userInputArray.Length + "\n");
-
+            Console.Clear();
             Console.WriteLine("Now Input numbers into each the array\n");
 
             for (int i = 0; i < userInputArray.Length; i++)
